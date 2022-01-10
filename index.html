@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Library</title>
 </head>
 
@@ -14,22 +15,23 @@
   </header>
 
   <div class="add-book">
-    <button type="button">New Book</button>
+    <button type="button" id="new-book">New Book</button>
   </div>
 
-  <div class="modal">
+  <div class="modal d-none" id="modal">
     <form>
       <label for="book-author">Author:</label><br />
       <input type="text" id="book-author" name="book-author" required><br />
       <label for="book-title">Title:</label><br />
-      <input type="text" id="book-title" name="book-title" reuired><br />
+      <input type="text" id="book-title" name="book-title" required><br />
       <label for="book-pages">Number of pages:</label><br />
       <input type="number" id="book-pages" name="book-pages"><br />
+      <button type="button" id="get-input">Add</button>
     </form>
-    <button type="button">Add</button>
+    
   </div>
 
-  <div class="book" id="book-card"></div>
+  <div class="book" id="book-card"><button type="submit">Remove</button></div>
 
 
   <script type="text/javascript" src='main.js'></script>
